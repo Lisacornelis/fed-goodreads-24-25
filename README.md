@@ -273,23 +273,67 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 ### Stand van zaken
 
+Wegens het gebrek aan een beoordelingsformulier, een beoordeling of feedback op mijn herkansing van vorig jaar heeft Danny naar mijn opdracht gekeken zodat het voor mij duidelijk is wat ik exact moet aanpassen. Nogmaals bedankt hiervoor Danny!
+
+Hieronder de berichten die ik heb ontvangen:
+
+Wat mij betreft zit hem in 2 'grote dingen'; je professionele vormgeving van de site en je focus als in responsive en of surface plane. Er zitten nog een aantal dingetjes vormgeving wise die wel op de originele site zitten maar niet op jouw site. Linkjes andere kleuren, witruimte hier en daar klopt niet. Oftewel de vormgeving moet gestroomlijnder en nog meer lijken op de originele site. En verder mis ik nog wat content ik zie bijv. de footer niet.
+Verder geef je aan dat je voor responsive bent gegaan als focus. Dat zie ik niet. Als ik jouw site ga schalen gebeurt er weinig. Maar dat staat denk ik voor een breder iets, Goodreads is van zichzelf niet super responsive. De mobiele website ziet er echt een stuk anders uit. Wat ik zou aanraden is dat je wisselt en voor surface plane gaat. Dan kan je de site prima mobiel houden en ga je 5 onderwerpen toepassen voor de surface plane. Een startpunt voor dingen om te doen staat in de slides en de opdracht.
+Dus zoals het er nu voor staat zijn dat de 2 dingen die op het beoordelingsformulier staan waar je niet aan voldoet en waardoor het nog geen voldoende is.
+Verder zie ik allemaal 'kleine' dingetjes die wat makkelijker op te lossen zijn;
+
+- Je readme.md klopt niet helemaal qua dropdowns.
+- Ook je bronnen zijn niet specifiek, 'chatgtp' is geen bron; op z'n minst prompt of share van je chat.
+- Je mappenstructuur op GitHub klopt niet. Oude bestanden, oude mapjes waar niks instaat. Dat moet je opschonen.
+- Paar dingen die ik semantisch qua HTML anders zou doen, kunnen we bij de feedbackgesprekken bespreken.
+- Paar dingen die ik qua code-kwaliteit in de CSS anders zou doen. Geen px maar ems, minder classes, meer custom properties, meer grid ipv flexbox. Ook dat kunnen we het beste bij een feedbackmoment bespreken denk ik.
+
+Dus al met al een goede basis waar je mee verder kan, opnieuw beginnen lijkt me niet nodig. Maar wel nog wat zaken om af te maken en aan te vullen (vormgeving + surface plane) en een lijstje met code kwaliteit dingetjes om te fixen. Daar moet je nog wel wat aandacht aan besteden.
+
+### Progressie
+
+Ik ben begonnen met het verbeteren van de Read Me. Ik heb alles nagelezen en de volgorde van de dropdowns gefixt en nieuwe aangemaakt voor de inhaalklas.
+
+### Voortgangsgesprek
+
 Insert tekst
 
 </details>
 
 <details>
-  <summary>Week 4 - 6</summary>
+  <summary>Week 4 & 5</summary>
 
 ### Stand van zaken
+
+Insert tekst
+
+### Voortgangsgesprek
 
 Insert tekst
 
 </details>
 
 <details>
-  <summary>Week 7 - 9 (misschien)</summary>
+  <summary>Week 6 & 7</summary>
 
 ### Stand van zaken
+
+Insert tekst
+
+### Voortgangsgesprek
+
+Insert tekst
+
+</details>
+
+<details>
+  <summary>Week 8 & 9</summary>
+
+### Stand van zaken
+
+Insert tekst
+
+### Eindgesprek
 
 Insert tekst
 
