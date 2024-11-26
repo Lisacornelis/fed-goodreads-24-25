@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "NimbusRegular";
+  src: url(/font/nimbus-sans-l/NimbusSanL-Reg.otf);
+}
+@font-face {
+  font-family: "NimbusBold";
+  src: url(/font/nimbus-sans-l/NimbusSanL-Bol.otf);
+}
+
+:root {
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+:root {
+  --beige: #f5f1ea;
+  --bruin: #75420e;
+  --donkerbruin: #553b08;
+  --grijs: #aaaaaa;
+}
+
+/* navigatie */
+nav {
+  position: relative;
+  background-color: var(--beige);
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+nav ul:last-of-type {
+  padding-bottom: 1rem;
+}
+.Logo {
+  display: block;
+  width: 55vw;
+  position: relative;
+}
+.Searchsvg {
+  width: 10vw;
+  position: relative;
+}
+.Accountsvg {
+  width: 10vw;
+  position: relative;
+}
+ul li {
+  font-family: "NimbusRegular";
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 5%;
+}
+/*code van de carousel*/
+.carousel > ul {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel ul::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel ul li a img {
+  align-items: center;
+  border-radius: 0.6em;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: 0 1rem;
+  position: relative;
+  scroll-snap-align: center;
+  transform: scale(1);
+
+  width: 200px;
+  height: 300px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+/*centreren van de hoofdafbeelding bovenaan*/
+.AtlasCover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 3%;
+}
+h2 {
+  text-align: center;
+  font-family: "NimbusBold";
+}
+h3 {
+  font-family: "NimbusBold";
+  text-align: center;
+}
+.Rating {
+  width: 100%;
+  margin-top: 3%;
+}
+.starcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  width: 2rem;
+  height: 2rem;
+  /* dit is de vorm van de ster */
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: gray;
+  transition: 1s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+/* kies een andere kleur geel, donkerder */
+.star.active {
+  background-color: yellow;
+}
+/*styling van de button want to read*/
+.WTR {
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+}
+/*styling van kindle button*/
+.Kindle {
+  text-decoration: none;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: green;
+}
+p {
+  font-family: "NimbusRegular";
+  text-align: left;
+  margin: 2%;
+}
+b {
+  font-family: "NimbusBold";
+  margin: 2%;
+}
+.SM {
+  margin: 5%;
+  color: green;
+}
+/*styling van de genre lijst*/
+#Listyle {
+  list-style: none;
+  color: rgb(0, 120, 0);
+}
+/*styling van de genre lijst*/
+#UlNominees {
+  margin-top: 5%;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 1;
+  column-gap: 1.25em;
+  text-align: left;
+}
+/*styling van de genre lijst*/
+a {
+  text-decoration: underline;
+  color: black;
+  text-decoration-color: green;
+  text-underline-offset: 5px;
+}
+/*Rechte lijnen onder mensen die aan het lezen zijn*/
+hr.solid {
+  border-top: 3px solid #bbb;
+  width: 85%;
+}
+/*similar button styling onder aan pagina*/
+.similar {
+  text-decoration: none;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  background-color: white;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: grey;
+}
