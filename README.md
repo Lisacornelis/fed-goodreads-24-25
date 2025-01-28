@@ -310,8 +310,10 @@ Dinsdag heb ik met Danny gezeten om de feedback inhoudelijk verder te bespreken 
 Deze weken heb ik mij gestort op het maken van de footer.
 Zo ziet de footer op de Goodreads website uit:
 <img src="readme-images/Screenshot footer.png" width="375px" alt="Originele Goodreads footer.">
+<br/>
 En dit is hoe de footer die ik heb nagemaakt er uit ziet:
 <img src="readme-images/Screenshot footer nagemaakt.png" width="375px" alt="Nagemaakte Goodreads footer.">
+<br/>
 Het maken van de footer begon stroef, maar toen ik de juiste manier van flexbox gebruikte kwam ik er redelijk snel uit en waren de meest tijdrovende onderdelen de kleine stylingselementen perfectioneren. Iets waar ik wel tegenaan liep was dat de Google play afbeelding niet makkelijk gepositioneerd kon worden vanwege een ingebouwde marge. Ik heb hier veel over opgezocht en ik kwam erachter dat vele anderen dit probleem ook ervaarden.
 https://stackoverflow.com/questions/34941473/new-google-play-badge-doesnt-get-the-size-right
 Ik ben niet helemaal tevreden met het feit dat de twee afbeeldingen niet direct onder elkaar zitten, maar helaas kon ik daar niets aan doen.
