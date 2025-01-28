@@ -38,8 +38,8 @@ https://www.goodreads.com/
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
-Homepage Goodreads\
-
+Homepage Goodreads
+<br/>
 <img src="readme-images/Screenshot mobiel homepagina.png" width="375px" alt="Screenshot van de homepagina die wordt nagemaakt.">
 
 #### Screenshot(s) van de tweede pagina (small screen):
