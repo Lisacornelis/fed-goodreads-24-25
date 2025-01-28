@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "NimbusRegular";
+  src: url(../font/nimbus-sans-l/NimbusSanL-Reg.otf);
+}
+@font-face {
+  font-family: "NimbusBold";
+  src: url(../font/nimbus-sans-l/NimbusSanL-Bol.otf);
+}
+
+body {
+  background-color: var(--background);
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default light mode kleuren */
+:root {
+  --text: #111111;
+  --background: #ffffff;
+  --footer-background: #f5f1ea;
+  --footer-links: #553b08;
+  --default-stars: #c8c4cc;
+  --secondary-text: #808080;
+  --links: #00635d;
+  --nominees-button: #f8d47c;
+}
+
+/* Dark mode kleuren */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffffff;
+    --background: #383028;
+    --footer-background: #252017;
+    --footer-links: #f5f1ea;
+    --default-stars: #c8c4cc;
+    --secondary-text: #f5f1ea;
+    --links: #fcbe51;
+    --nominees-button: #fcbe51;
+  }
+}
+
+/* Inverted mode kleuren */
+.InvertedColors {
+  --text: #ffffff;
+  --background: #111111;
+  --footer-background: #131b26;
+  --footer-links: #aac5f7;
+  --default-stars: #373b33;
+  --secondary-text: #7f7f7f;
+  --links: #ff9ca2;
+  --nominees-button: #072b83;
+}
+
+/* NAVIGATIE */
+
+/* De nav container */
+nav {
+  position: relative; /* Zorg ervoor dat de nav zelf in de juiste plaats zit */
+  background-color: var(--footer-background);
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul:last-of-type {
+  padding-bottom: 1rem;
+}
+nav ul li a {
+  color: var(--text);
+  display: block; /* Zorgt ervoor dat de a-tags zich gedragen als blokken */
+}
+/* Standaard Logo */
+.Logo {
+  display: block;
+  width: 45vw; /* Zorg ervoor dat het logo 45% van de schermbreedte gebruikt */
+  position: relative; /* Plaats het logo op de normale manier, in de flow van de nav */
+}
+/* Inverted Logo */
+.LogoInverted {
+  display: none; /* Standaard verborgen */
+  width: 45vw; /* Zorg ervoor dat het inverted logo dezelfde grootte heeft als het normale logo */
+  position: relative; /* Zorg ervoor dat het inverted logo in de normale flow van de nav blijft */
+}
+/* Wanneer de InvertedColors klasse wordt toegevoegd */
+.InvertedColors .Logo {
+  display: none; /* Verberg het standaard logo */
+}
+.InvertedColors .LogoInverted {
+  display: block; /* Toon het inverted logo */
+}
+/* Andere afbeeldingen in de nav */
+.Searchsvg,
+.Accountsvg {
+  width: 8vw; /* Zorg ervoor dat de zoek- en account icoontjes dezelfde grootte hebben */
+  position: relative; /* Zorg ervoor dat de iconen in de normale flow van de nav staan */
+}
+/* Zorg ervoor dat de normale layout van de nav-items intact blijft */
+ul li {
+  font-family: "NimbusRegular";
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5% 4% 2% 4%; /* Zorg ervoor dat de item-grootte consistent blijft */
+}
+
+nav a {
+  text-decoration: none; /* geen underline op de a */
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 1.2rem;
+  background-color: var(--footer-background);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Laat de inhoud naar een nieuwe rij gaan als het scherm te smal wordt */
+}
+
+/* linker */
+.footer-left {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column; /* Stapelt de items verticaal */
+  gap: 1rem; /* Ruimte tussen de twee lijsten */
+  width: 49%; /* Adjust width to leave space for the right section */
+}
+
+.footer-list {
+  display: block; /* Ensure the lists are block-level elements */
+}
+
+.footer-list h3 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--text);
+  font-family: "NimbusBold";
+}
+
+.footer-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Removes default margin */
+}
+
+.footer-list ul li {
+  display: block; /* Force the list items to stack vertically */
+  margin-bottom: 10px;
+  font-family: "NimbusRegular";
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer-list ul li a {
+  color: var(--footer-links);
+  text-decoration: none;
+}
+
+.footer-list ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Iconen */
+.footer-list .social-icons {
+  display: flex; /* Plaatst de cirkels naast elkaar */
+  justify-content: flex-start; /* Lijn uit naar links */
+  gap: 0.5rem; /* Ruimte tussen de cirkels */
+  padding: 0; /* Verwijder standaard padding van de lijst */
+  list-style: none;
+}
+
+/* Stijl voor de cirkels */
+.footer-list .social-icons .circle {
+  display: inline-block;
+  width: 30px; /* Breedte van de cirkel */
+  height: 30px; /* Hoogte van de cirkel */
+  border-radius: 50%; /* Maak de cirkels rond */
+  text-decoration: none; /* Verwijder linkstijl */
+}
+
+/* img voor social media */
+.footer-list .circle.facebook {
+  background-image: url("./images/Facebook\ icon\ img.png");
+  background-size: cover;
+  background-position: center;
+}
+.footer-list .circle.twitter {
+  background-image: url("./images/Twitter\ icon\ img.png");
+  background-size: cover;
+  background-position: center;
+}
+.footer-list .circle.instagram {
+  background-image: url("./images/Instagram\ icon\ img.png");
+  background-size: cover;
+  background-position: center;
+}
+.footer-list .circle.linkedin {
+  background-image: url("./images/LinkedIn\ icon\ img.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-right {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "NimbusRegular";
+}
+
+.app-store-link {
+  display: inline-block;
+  overflow: hidden;
+  width: 150px;
+  height: 90px;
+}
+
+.app-store-link img {
+  width: 135px;
+  height: 40px;
+}
+
+.google-play-link img {
+  width: 157px;
+  margin-right: 0.2rem;
+}
+
+.footer-right h5 {
+  color: var(--text);
+}

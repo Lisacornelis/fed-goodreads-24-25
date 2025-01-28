@@ -1,0 +1,562 @@
+/* Voormalige navigatie */
+/* nav {
+  position: relative;
+  background-color: var(--footer-background);
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul:last-of-type {
+  padding-bottom: 1rem;
+}
+nav ul li a {
+  color: var(--text);
+}
+.Logo {
+  display: block;
+  width: 45vw;
+  position: relative;
+}
+.Searchsvg {
+  width: 8vw;
+  position: relative;
+}
+.Accountsvg {
+  width: 8vw;
+  position: relative;
+}
+ul li {
+  font-family: "NimbusRegular";
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5% 4% 2% 4%;
+} */
+
+/* SECTION TOP PARTS */
+
+/* TopParts Flexbox Layout */
+.TopParts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 3%; /* Zorgt ervoor dat er ruimte is bovenin de section */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Centreren van de hoofdafbeelding bovenaan */
+.AtlasCover {
+  display: block;
+  width: 50%;
+}
+
+/* Titel en auteur */
+.BooktTitle {
+  text-align: center;
+  font-family: "TimesNewRoman";
+  color: var(--text);
+  margin-bottom: 0.1rem; /* Verklein de ruimte onder de titel */
+}
+
+.AuthorName {
+  font-family: "TimesNewRoman";
+  color: var(--text);
+  text-align: center;
+  font-size: 0.9rem; /* Maak de tekst van de auteur iets kleiner */
+  margin-top: 0.1rem; /* Verklein de ruimte boven de naam van de auteur */
+  margin-bottom: 0.1rem;
+}
+
+/* Beoordeling afbeelding */
+/* .Rating {
+  width: 100%;
+  margin-top: 0.1rem;
+} */
+
+.rating-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.static-stars {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.star {
+  width: 2rem;
+  height: 2rem;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: #ccc;
+}
+
+.star.active {
+  background-color: #f07404;
+}
+
+.star.inactive {
+  background-color: #ccc;
+}
+
+.description {
+  font-family: "NimbusRegular";
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+  margin-top: 0;
+}
+
+/* Flexbox voor de knoppencontainer */
+.TopParts .buttons-container {
+  display: flex;
+  justify-content: center; /* Zorgt ervoor dat de knoppen gecentreerd zijn */
+  gap: 1rem; /* Ruimte tussen de knoppen */
+}
+
+/* Stijl voor de knoppen */
+.TopParts .button {
+  padding: 0.6em 1.3em 0.6em 1.3em;
+  background-color: var(--links);
+  border-radius: 10px;
+  color: var(--background);
+  text-align: center;
+  display: inline-block;
+  text-decoration: none; /* Zorgt ervoor dat de link eruitziet als een knop */
+  transition: all 0.4s ease; /* Voeg een overgangseffect toe voor alle wijzigingen */
+}
+
+/* Kindle button stijl */
+.TopParts .button:nth-child(2) {
+  background-color: var(--background);
+  border-style: solid;
+  border-color: var(--links);
+  color: var(--links);
+}
+
+/* Active stijl voor de eerste knop na klik */
+.TopParts .button.clicked {
+  background-color: var(--background);
+  border-style: solid;
+  border-color: var(--links);
+  color: var(--links);
+}
+
+/* Sterren animatie */
+.starcontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em; /* Ruimte tussen de sterren en de beoordeling */
+}
+
+.starcontainer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.star {
+  width: 2rem;
+  height: 2rem;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: var(--default-stars);
+  transition: 1s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.star.active {
+  background-color: #f07404;
+}
+
+/* 'Rate this book' */
+.RateThisBook {
+  margin-top: 0.5em; /* Ruimte tussen sterren en de 'Rate this book' tekst */
+  font-family: "NimbusRegular";
+  color: var(--text);
+  text-align: center;
+}
+
+/* SECTION BOOK SUMMARY */
+
+.BookSummary {
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box; /* Zorg dat de padding niet het element vergroot */
+}
+
+.BookSummary b {
+  font-family: "NimbusBold";
+  text-align: left;
+  color: var(--text);
+}
+.BookSummary p {
+  font-family: "NimbusRegular";
+  text-align: left;
+  color: var(--text);
+}
+
+.BookSummary a {
+  font-family: "NimbusBold";
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* SECTION GENRES */
+
+/* Voormalige genre lijst */
+/* .Genres h4 {
+  font-family: "NimbusRegular";
+  font-size: 0.9rem;
+  color: var(--donkergrijs);
+  text-align: left;
+  padding: 0% 4% 0% 4%;
+}
+#Listyle {
+  list-style: none;
+  color: var(--groen);
+}
+#UlGenres {
+  margin-top: 5%;
+  column-count: 1;
+  column-gap: 1.25em;
+  text-align: left;
+  padding-bottom: 5%;
+}
+#UlGenres a {
+  text-decoration: underline;
+  color: var(--color-text);
+  text-decoration-color: var(--groen);
+  text-underline-offset: 5px;
+}
+#UlGenres li {
+  font-family: "NimbusBold";
+  font-size: 0.9rem;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 5%;
+} */
+
+.Genres {
+  display: flex;
+  flex-wrap: wrap; /* Zorg ervoor dat tweede en derde h4 op een nieuwe regel staan */
+  align-items: baseline; /* Zet de eerste h4 en ul op dezelfde lijn */
+  padding: 8% 4% 0% 4%; /* Padding links en rechts */
+  gap: 1rem; /* Ruimte tussen elementen */
+}
+
+/* Genres h4 */
+.Genres > h4:first-of-type {
+  margin: 0; /* Verwijder extra marges */
+  flex: 0 0 auto; /* Zorg dat deze niet krimpt of groeit */
+  font-family: "NimbusRegular"; /* Zelfde styling als de onderste h4 */
+  font-size: 0.9rem; /* Zelfde lettergrootte als de onderste h4 */
+  color: var(--secondary-text); /* Zelfde kleur als de onderste h4 */
+  text-align: left; /* Tekst uitlijnen naar links */
+}
+
+#UlGenres {
+  flex: 1; /* Vul de resterende ruimte naast de titel */
+  display: flex;
+  flex-wrap: wrap; /* Laat de lijstitems over meerdere regels gaan indien nodig */
+  gap: 1rem; /* Ruimte tussen lijstitems */
+  margin-bottom: 1rem;
+  padding: 0; /* Verwijder extra padding */
+  list-style: none; /* Geen opsommingstekens */
+}
+
+#UlGenres li {
+  font-family: "NimbusBold";
+  font-size: 0.9rem;
+  display: inline-block;
+  text-align: center;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+#UlGenres a {
+  text-decoration: underline;
+  color: var(--text);
+  text-decoration-color: var(--links);
+  text-underline-offset: 5px; /* Behoud de offset */
+}
+
+/* 2e en 3e h4 */
+
+.Genres > h4:nth-of-type(2),
+.Genres > h4:nth-of-type(3) {
+  flex-basis: 100%; /* Laat deze koppen op een nieuwe regel beginnen */
+  font-family: "NimbusRegular";
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  text-align: left;
+}
+
+.Genres h4:not(:first-of-type) {
+  margin-top: 0rem; /* Verkleint de ruimte boven de tweede en derde h4 */
+}
+
+.Genres h4:nth-of-type(2),
+.Genres h4:nth-of-type(3) {
+  margin-bottom: 0rem; /* Verkleint de marge tussen de tweede en derde h4 */
+}
+
+/* SECTION OTHER READERS */
+
+/* Currently reading & Want to read */
+
+.BookDetails {
+  font-family: "NimbusBold";
+  color: var(--text);
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+}
+
+.reading-status {
+  display: flex;
+  align-items: center; /* Aligns the dots and text vertically */
+  justify-content: center; /* Centers the content horizontally */
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.dots {
+  display: flex;
+  padding: 0; /* Removes default list padding */
+  margin: 0; /* Removes default list margin */
+  list-style: none; /* Removes bullet points */
+}
+
+.dot img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover; /* Ensures the image scales proportionally */
+  border-radius: 50%;
+}
+
+.reading-text {
+  font-family: "NimbusRegular";
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+/* SECTION ABOUT THE AUTHOR */
+
+.AboutTheAuthor {
+  padding-right: 4%;
+  padding-left: 4%;
+  color: var(--text);
+}
+
+.AutheurLezerKopjes {
+  font-family: "TimesNewRoman";
+  color: var(--text);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.AboutTheAuthor p {
+  font-family: "NimbusRegular";
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* Container voor de profile card */
+.profile-card {
+  display: flex;
+  align-items: center; /* Verticaal centreren */
+  justify-content: center; /* Horizontaal centreren */
+  font-family: "NimbusRegular";
+  gap: 1.2rem;
+}
+
+/* Profile picture */
+.profile-picture {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0; /* Reset de margin naar 0 */
+  overflow: hidden; /* Zorgt ervoor dat de afbeelding in de cirkel blijft */
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Zorgt ervoor dat de afbeelding goed in de cirkel past */
+  object-position: center; /* Zorgt ervoor dat het midden van de afbeelding zichtbaar is */
+}
+
+/* Author info */
+.AuthorName {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Bruine stip */
+.verified-badge {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-bottom: 0.4rem;
+  background-color: #8b4513;
+  border-radius: 50%;
+}
+
+/* Stats tekst */
+.profile-info p {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+/* Follow button */
+.follow-button {
+  background-color: var(--text);
+  color: var(--background);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.follow-button:hover {
+  background-color: var(--default-stars);
+}
+
+/* Grijze streep */
+hr.solid {
+  border-top: 2px solid var(--default-stars);
+  width: 90%;
+}
+
+/* SECTION CAROUSEL */
+
+.carousel h2 {
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: var(--text);
+}
+
+.carousel > ul {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  height: 55vh;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.carousel ul::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel ul li a img {
+  align-items: center;
+  border-radius: 0.6em;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: 0 1rem;
+  position: relative;
+  scroll-snap-align: center;
+  transform: scale(1);
+
+  width: 200;
+  height: 300px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Styling "Similar books" button onder aan pagina*/
+.similar {
+  position: relative;
+  text-decoration: none;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  background-color: var(--background);
+  border-radius: 40px;
+  border-style: solid;
+  border-color: var(--secondary-text);
+  text-align: center;
+  display: inline-block;
+  width: calc(100% - 8%); /* Houd 4% marge links en rechts in rekening */
+  margin: 0 auto; /* Centreert de button horizontaal */
+  margin-left: 4%;
+  margin-right: 4%;
+  box-sizing: border-box; /* Zorgt dat de padding binnen de breedte blijft */
+  font-family: "NimbusRegular";
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+/* Zet overgangen en animaties uit voor alle elementen bij "reduce" voorkeur */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important; /* Zet alle overgangen uit */
+    animation: none !important; /* Zet alle animaties uit */
+  }
+}
+/* Onderaan toegevoegd zodat dit alle transities overschrijft. */
+/* instellingen > toegankelijkheid > beweging > verminder beewging */
