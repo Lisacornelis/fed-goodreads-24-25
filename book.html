@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Book specifieke stylesheet -->
+    <link rel="Stylesheet" href="./book.css" />
+    <!-- Generieke stylesheet voor de nav en footer -->
+    <link rel="Stylesheet" href="./general.css" />
+    <title>Atlas six</title>
+  </head>
+  <body>
+    <header>
+      <!-- Nav bar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="/">
+              <img
+                class="Searchsvg"
+                src="./images/Searchsvg.svg"
+                alt="zoeken"
+              />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img
+                class="Logo"
+                src="./images/Goodreads_logo.svg.png"
+                alt="Logo"
+              />
+              <img
+                class="LogoInverted"
+                src="./images/GoodreadsLogoInverted.png"
+                alt="Inverted logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="Accountsvg"
+                src="./images/account.svg"
+                alt="Account"
+              />
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Books</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Cover Foto, Buttons, Starcontainer en "Rate this book" -->
+    <section class="TopParts">
+      <img class="AtlasCover" src="./images/Atlas.jpeg" alt="" />
+      <h2 class="BooktTitle">The Atlas Six</h2>
+      <h3 class="AuthorName">
+        Olivie Blake <span class="verified-badge"></span>
+      </h3>
+
+      <!-- <img
+        class="Rating"
+        src="./images/rating.png"
+        alt="4.61 sterren van de 5"
+      /> -->
+
+      <section class="rating-section">
+        <header>
+          <ul class="static-stars">
+            <li class="star active"></li>
+            <li class="star active"></li>
+            <li class="star active"></li>
+            <li class="star active"></li>
+            <li class="star inactive"></li>
+          </ul>
+          <h2>4.61</h2>
+        </header>
+        <p class="description">49,712 ratings - 6,053 reviews</p>
+      </section>
+
+      <section class="buttons-container">
+        <!-- Flex container voor knoppen -->
+        <a class="button">Want to read</a>
+        <a class="button">Kindle $14,99</a>
+      </section>
+
+      <section class="starcontainer">
+        <ul>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+        </ul>
+      </section>
+
+      <h4 class="RateThisBook">Rate this book</h4>
+    </section>
+
+    <!-- Stukje over samenvatting -->
+    <section class="BookSummary">
+      <b
+        >Enter the brutal and elite world of a war college for dragon riders
+        from USA Today bestselling author Rebecca Yarros.</b
+      >
+      <p>
+        Twenty year old Violet Sorrengail was supposed to enter the Scribe
+        Quadrant, living a quiet life among books and history. Now, the
+        commanding general also known as her tough-as-talons mother has ordered
+        Violet to join the hundreds of candidates striving to become the elite
+        of Navarre: dragon riders.
+      </p>
+      <a>Show more ↓</a>
+    </section>
+
+    <!-- Stukje over genres -->
+    <section class="Genres">
+      <h4>Genres</h4>
+      <ul id="UlGenres">
+        <li><a href="#">Fantasy</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Dragons</a></li>
+        <li><a href="#">Fiction</a></li>
+        <li><a href="#">Audiobook</a></li>
+        <li><a href="#">Fantasy Romance</a></li>
+        <li><a href="#">New Adult</a></li>
+      </ul>
+      <h4>376 pages, Kindle Edition</h4>
+      <h4>First published January 31, 2020</h4>
+    </section>
+
+    <!-- Stukje over andere lezers-->
+    <section class="OtherReaders">
+      <h3 class="BookDetails">Book details & editions</h3>
+      <!-- Grijze streep -->
+      <hr class="solid" />
+      <section class="reading-status">
+        <ul class="dots">
+          <li class="dot">
+            <img src="./images/pf1.avif" alt="dot" />
+          </li>
+          <li class="dot">
+            <img src="./images/pf1.avif" alt="dot" />
+          </li>
+          <li class="dot">
+            <img src="./images/pf1.avif" alt="dot" />
+          </li>
+        </ul>
+        <p class="reading-text">102k people are currently reading</p>
+      </section>
+      <section class="reading-status">
+        <ul class="dots">
+          <li class="dot">
+            <img src="./images/pf1.avif" alt="dot" />
+          </li>
+          <li class="dot">
+            <img src="./images/pf1.avif" alt="dot" />
+          </li>
+          <li class="dot">
+            <img src="./images/pf1.avif" alt="dot" />
+          </li>
+        </ul>
+        <p class="reading-text">50k people want to read this book</p>
+      </section>
+      <!-- Grijze streep -->
+      <hr class="solid" />
+    </section>
+
+    <!-- Stukje over de auteur -->
+    <section class="AboutTheAuthor">
+      <h2 class="AutheurLezerKopjes">About the author</h2>
+      <article class="profile-card">
+        <figure class="profile-picture">
+          <img
+            src="./images/Author portrait.jpg"
+            alt="Profielfoto Olivie Blake"
+          />
+        </figure>
+        <section class="profile-info">
+          <h2 class="AuthorName">
+            Rebecca Yarros <span class="verified-badge"></span>
+          </h2>
+          <p class="stats">40 books · 63.9k followers</p>
+        </section>
+        <button class="follow-button">Follow</button>
+      </article>
+      <p>
+        Rebecca Yarros is a hopeless romantic and coffee addict. She is the New
+        York Times bestselling author of over twenty novels, including Fourth
+        Wing, The Last Letter and The Things We Leave Unfinished. She’s also the
+        recipient of the Colorado Romance Writer’s Award of Excellence for Eyes
+        Turned Skyward. Rebecca loves military heroes and has been blissfully
+        married to hers for over twenty years. A mother of six, she is currently
+        surviving the teenage years with all four of her hockey-playing sons.
+      </p>
+      <!-- Grijze streep -->
+      <hr class="solid" />
+    </section>
+
+    <!-- Carousel -->
+    <section class="carousel" aria-label="carousel">
+      <h2 class="AutheurLezerKopjes">Readers also enjoyed</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img
+              src="./images/ALitteLife.jpeg"
+              alt="Cover van het boek A Little Life geschreven door Hanya Yanaghara"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="./book.html">
+            <img
+              src="./images/Atlas.jpeg"
+              alt="The Atlas Six geschreven door Olivie Blake"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./images/Almond.jpeg"
+              alt="Almond geschreven door Sohn Won-pyung"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./images/AManCalledOve.jpeg"
+              alt="A Man Called Ove geschreven door Fredrik Backman"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./images/Ariadne.jpeg"
+              alt="Ariadne geschreven door Jennifer Saint"
+            />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <a class="similar">All similar books</a>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Linker kant -->
+      <section class="footer-left">
+        <article class="footer-list">
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Interest Based Ads</a></li>
+            <li><a href="#">Ad Preferences</a></li>
+          </ul>
+        </article>
+
+        <article class="footer-list">
+          <h3>WORK WITH US</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Authors & Ads Blog</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </article>
+
+        <article class="footer-list">
+          <h3>CONNECT</h3>
+          <ul class="social-icons">
+            <li><a href="#" class="circle facebook"></a></li>
+            <li><a href="#" class="circle twitter"></a></li>
+            <li><a href="#" class="circle instagram"></a></li>
+            <li><a href="#" class="circle linkedin"></a></li>
+          </ul>
+        </article>
+      </section>
+      <!-- Rechter kant -->
+      <section class="footer-right">
+        <a
+          href="https://apps.apple.com/app/id1551353775"
+          class="app-store-link"
+        >
+          <img
+            src="https://dryofg8nmyqjw.cloudfront.net/images/badge-apple_app_store@2x.png"
+            alt="Download app for iOS"
+          />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.stagescycling.stages"
+          class="google-play-link"
+        >
+          <img
+            alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+          />
+        </a>
+        <h5>© 2025 Goodreads, inc</h5>
+      </section>
+    </footer>
+
+    <!-- Link naar Java Script -->
+    <script defer src="script.js"></script>
+  </body>
+</html>
