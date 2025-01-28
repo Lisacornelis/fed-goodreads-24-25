@@ -1,10 +1,10 @@
 @font-face {
   font-family: "NimbusRegular";
-  src: url(/font/nimbus-sans-l/NimbusSanL-Reg.otf);
+  src: url(./font/nimbus-sans-l/NimbusSanL-Reg.otf);
 }
 @font-face {
   font-family: "NimbusBold";
-  src: url(/font/nimbus-sans-l/NimbusSanL-Bol.otf);
+  src: url(./font/nimbus-sans-l/NimbusSanL-Bol.otf);
 }
 
 body {
