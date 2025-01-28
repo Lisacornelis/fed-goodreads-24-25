@@ -401,7 +401,6 @@ Nb. Vermeld de bronnen ook in je code.
    <br/>
    <img src="readme-images/Screenshot chatgpt foutmelding .png" width="375px" alt="Screenshot chatgpt foutmelding">
    <br/>
-
    Ik kon niet elk gesprek met ChatGPT delen, zoals te zien is in deze foutmelding. In deze chat vroeg ik om hulp bij het weghalen van de divs in de sterren animatie sectie en hulp bij het maken van het stukje over de auteur.
    https://chatgpt.com/share/67801c82-3f60-8009-9a87-2166fd56549a
    https://chatgpt.com/share/67801c99-b490-8009-9507-1a092a287f08
