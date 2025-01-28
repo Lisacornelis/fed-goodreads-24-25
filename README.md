@@ -312,6 +312,7 @@ Zo ziet de footer op de Goodreads website uit:
 <img src="readme-images/Screenshot footer.png" width="375px" alt="Originele Goodreads footer.">
 <br/>
 En dit is hoe de footer die ik heb nagemaakt er uit ziet:
+<br/>
 <img src="readme-images/Screenshot footer nagemaakt.png" width="375px" alt="Nagemaakte Goodreads footer.">
 <br/>
 Het maken van de footer begon stroef, maar toen ik de juiste manier van flexbox gebruikte kwam ik er redelijk snel uit en waren de meest tijdrovende onderdelen de kleine stylingselementen perfectioneren. Iets waar ik wel tegenaan liep was dat de Google play afbeelding niet makkelijk gepositioneerd kon worden vanwege een ingebouwde marge. Ik heb hier veel over opgezocht en ik kwam erachter dat vele anderen dit probleem ook ervaarden.
@@ -396,13 +397,17 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. ChatGPT  
+1. ChatGPT
+   <br/>
    <img src="readme-images/Screenshot chatgpt foutmelding .png" width="375px" alt="Screenshot chatgpt foutmelding">
+   <br/>
+
    Ik kon niet elk gesprek met ChatGPT delen, zoals te zien is in deze foutmelding. In deze chat vroeg ik om hulp bij het weghalen van de divs in de sterren animatie sectie en hulp bij het maken van het stukje over de auteur.
    https://chatgpt.com/share/67801c82-3f60-8009-9a87-2166fd56549a
    https://chatgpt.com/share/67801c99-b490-8009-9507-1a092a287f08
    https://chatgpt.com/share/67867419-0de8-8009-a58d-5652da352063
    https://chatgpt.com/share/6789ccbd-1f4c-8009-ad22-8303d67ec781
+
 2. https://css-tricks.com/fighting-the-space-between-inline-block-elements/
 3. https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
 4. https://dev.to/dawnind/css3-selectors-cheat-sheet-6dk
