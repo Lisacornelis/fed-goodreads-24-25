@@ -387,6 +387,13 @@ Tijdens het eindgesprek hebben wij het volgende lijstje met aanpassingen voor de
 - De css van de footer en de nav, die nu in beide css pagina’s staat, aanpassen zodat dit niet meer dubbel staat.
 - Het aanpassen van de huidige classes op beide css pagina’s is niet nodig.
 
+Ik ben begonnen met alle plaatjes in de Readme aan te passen, zodat deze goed werden laten zien. Ook heb ik 'breaks' gebruikt om de opmaak mooier te maken.
+Vervolgens heb ik alle mappen uit Github gehaald en alles opnieuw geupload, zodat er geen dubbele mappen/bestanden meer in stonden. Ook heb ik alle css bestanden in 1 map gezet en een oud js bestand eruit gehaald.
+Daarna heb ik een derde css bestand aangemaakt; general.css, en hier de font faces, body styling, beide roots en de class voor het thema ingezet en deze uit de andere twee css bestanden gehaald. Hetzelfde heb ik gedaan voor de styling van de navigatie en de footer. Ondanks dat ik van te voren niet wist hoe ik dit probleem moest oplossen, bleek dit redelijk gemakkelijk te gaan en ik ben blij dat het is gelukt.
+Ik heb de styling van de rating-section in book.css aangepast zodat dit geen header meer was en daardoor niet de look van de nav aanpaste.
+Ik heb gecheckt of alles goed is gegaan en de live link gecheckt, nu zijn alle fonts wel goed ingeladen. Ik denk dat dit eerst niet zo was wegens de hoeveelheid oude bestanden.
+Als laatste heb ik de toegankelijkheidstest uitgevoerd en deze aan Github toegevoegd.
+
 </details>
 
 </details>
